@@ -1,0 +1,7 @@
+The main file starts from "Final_merge_Exp1.py" and "Final_merge_Exp3.py", which contain two sets of hyperparameter settings (mainly difference is "tomerge_nb_dict" in line 430 in "Final_merge_Exp1.py", which is the number of neuron to be shared in each layer).
+Both file import "dataset_construct_random_crop.py" and "models_merged_construct_dropout.py"
+"dataset_construct_random_crop.py" contains the construction of a TensorFlow Dataset.
+"models_merged_construct_dropout.py" contains the construction of a shared neural network topology. The function "VGG_merged" take 4 inputs: x_Face: the tensor (placeholder) of the data input of celebA dataset, x_imageNet: the tensor (placeholder) of the data input of imageNet dataset, merged_nb_dict: the number of shared neurons in each layer, and keep_ratio: the keep_ratio for dropout.
+"ILSVRC_labels.txt" is the labels used by the Oxford guy on their VGG-16 experiment, which differs from the original labels given in the  imageNet Challenge
+"VGG_face_train_attr.py" and "VGG_face_train_attr_phase2.py" are for trianing the VGG-16 on CelebA dataset, using pre-trianed weights on imdb dataset.
+"VGG_imageNet_test.py" imports the pre-trained weights on imageNet and run the test, hence confirms the correctness of the labels, and the construction of dataset (at leasting during testing).
