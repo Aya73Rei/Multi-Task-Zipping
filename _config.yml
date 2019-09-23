@@ -1,2 +1,5 @@
-<meta name="google-site-verification" content="7UAQMEBDPiwIT9bTwoxehuEtDDVuIp-7NObYwtH2hOs" />
 theme: jekyll-theme-cayman
+plugins:
+  - jekyll-seo-tag
+  
+google_site_verification: 7UAQMEBDPiwIT9bTwoxehuEtDDVuIp-7NObYwtH2hO
